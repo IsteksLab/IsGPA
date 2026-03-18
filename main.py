@@ -12,7 +12,7 @@ def ask(number):
   title = "IsGPA - GPA Calculator"
   totalGrades = input_dialog(title=title, text="List All Course Averages (Separated by Commas)").run()
   try:
-    totalGrades = [int(grade.strip() for grade in totalGrades.split(","))]
+    totalGrades = [int(grade.strip()) for grade in totalGrades.split(",")]
   except:
     raise TypeError("main.py - ask(number): Variable totalGrades expects units separated by commas.")
     sys.exit(1)
