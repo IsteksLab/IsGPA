@@ -29,7 +29,7 @@ def ask(number):
           updatedGrades.append(scale.get("score"))
         elif grades in range(0, 60):
           updatesGrades.append(0)
-    elif number == 2
+    elif number == 2:
       for scale in config["gpaLevel"]["5"].items():
         if grades in range(scale.get("range")[0], (scale.get("range")[1] + 1)):
           updatedGrades.append(scale.get("score"))
